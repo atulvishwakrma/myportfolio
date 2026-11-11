@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atul Sharma | Web Developer, WordPress &amp; SEO Content Writer from India</title>
+<meta name="description" content="Portfolio of Atul Sharma, a web developer from Ghazipur, Uttar Pradesh, India. Responsive websites, WordPress website management, SEO fundamentals and English + Hindi SEO content writing.">
+<meta name="author" content="Atul Sharma">
+<meta name="theme-color" content="#F8F9FB">
+<meta name="robots" content="index, follow">
+<!-- AFTER DEPLOYING: add  <link rel="canonical" href="https://YOUR-DOMAIN/">  and an og:url / og:image with your real address. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atul Sharma | Web Developer Portfolio">
+<meta property="og:description" content="Web developer from Ghazipur, India. Responsive websites, WordPress, SEO and English + Hindi content writing.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Atul Sharma | Web Developer Portfolio">
+<meta name="twitter:description" content="Web developer from Ghazipur, India. Responsive websites, WordPress, SEO and English + Hindi content writing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B1B2B'/%3E%3Ccircle cx='50' cy='14' r='9' fill='%238FB8DE'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23F8F9FB'%3EAS%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Atul Sharma",
+      "jobTitle": "Web Developer",
+      "description": "Web developer from Ghazipur, Uttar Pradesh, India. Responsive websites, WordPress website management, SEO fundamentals and English + Hindi SEO content writing.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Ghazipur", "addressRegion": "Uttar Pradesh", "postalCode": "233303", "addressCountry": "IN" },
+      "knowsAbout": ["Web development", "WordPress", "Search engine optimization", "Keyword research", "SEO content writing"],
+      "sameAs": [
+        "https://github.com/atulvishwakrma",
+        "https://www.linkedin.com/in/atul-sharma-34b4432b6/",
+        "https://leetcode.com/asatulsharma",
+        "https://x.com/atulsharma",
+        "https://www.instagram.com/atulsharma",
+        "https://www.instagram.com/lazycrazy.tech",
+        "https://www.youtube.com/lazycrazytech"
+      ]
+    },
+    { "@type": "WebSite", "name": "Atul Sharma | Portfolio", "inLanguage": "en-IN" }
+  ]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   DESIGN TOKENS: change colours here and the whole site follows.
+   paper #F8F9FB  mist #D5DCE5  sky #8FB8DE  teal #1F6F8B (large text/icons)
+   teal-deep #175873 (buttons/links)  teal-darker #0F4259 (dark cards)
+   ink #0B1B2B (text, dark sections)  ink-soft #3A4859 (secondary text)
+   ========================================================================== */
+:root{
+  --paper:#F8F9FB; --mist:#D5DCE5; --sky:#8FB8DE; --teal:#1F6F8B;
+  --teal-deep:#175873; --teal-darker:#0F4259; --ink:#0B1B2B; --ink-soft:#3A4859;
+  --font-display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --font-accent:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --font-body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --radius:2rem;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{max-width:100%;display:block}
+h1,h2,h3,p,ul,ol,dl,dd,figure,blockquote{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);text-wrap:balance;font-weight:600}
+:focus-visible{outline:3px solid var(--teal-darker);outline-offset:3px;border-radius:6px}
+.dark :focus-visible,.dark:focus-visible{outline-color:var(--sky)}
+::selection{background:var(--sky);color:var(--ink)}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.container{width:min(100% - 2rem,75rem);margin-inline:auto}
+.icon{width:1.25rem;height:1.25rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.icon.sm{width:1rem;height:1rem}
+.icon.lg{width:1.5rem;height:1.5rem}
+
+/* Skip link */
+.skip{position:absolute;left:-9999px;top:.75rem;z-index:100;background:var(--ink);color:var(--paper);padding:.75rem 1.25rem;border-radius:999px;text-decoration:none}
+.skip:focus{position:fixed;left:.75rem}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:2.75rem;padding:.6rem 1.5rem;border-radius:999px;font:500 .95rem var(--font-body);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .2s ease,background-color .2s ease,border-color .2s ease,color .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--teal-deep);color:var(--paper);box-shadow:0 12px 28px -16px var(--teal-darker)}
+.btn-primary:hover{background:var(--teal-darker)}
+.btn-secondary{border-color:rgba(11,27,43,.3);color:var(--ink);background:transparent}
+.btn-secondary:hover{border-color:rgba(11,27,43,.6);background:rgba(213,220,229,.5)}
+.btn-ghost{color:var(--teal-deep)}
+.btn-ghost:hover{background:rgba(213,220,229,.5)}
+.btn[disabled]{opacity:.6;cursor:not-allowed;transform:none}
+.resume-btn[hidden]{display:none}
+
+/* Headings */
+.eyebrow{display:inline-flex;align-items:center;gap:.75rem;margin-bottom:1rem;font-size:.85rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep)}
+.eyebrow::before{content:"";width:2rem;height:1px;background:var(--teal)}
+.dark .eyebrow{color:var(--sky)}.dark .eyebrow::before{background:var(--sky)}
+.h2{font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.08;letter-spacing:-.01em}
+.sec-head{max-width:42rem}
+.sec-head p.lead{margin-top:1.25rem;font-size:1.125rem;color:var(--ink-soft)}
+.dark .sec-head p.lead{color:var(--mist)}
+em.accent{font-family:var(--font-accent);font-size:1.12em;font-weight:500;font-style:italic;color:var(--teal)}
+.dark em.accent{color:var(--sky)}
+section{padding:6rem 0}
+@media (min-width:768px){section{padding:8rem 0}}
+.alt{background:rgba(213,220,229,.3)}
+.dark{background:var(--ink);color:var(--paper)}
+
+/* Reveal on scroll (only hidden when JS is running) */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.22,1,.36,1) var(--d,0s),transform .7s cubic-bezier(.22,1,.36,1) var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js .reveal{opacity:1;transform:none}
+}
+
+/* ---------- Navigation ---------- */
+header.site{position:fixed;inset:0 0 auto 0;z-index:50;border-bottom:1px solid rgba(213,220,229,.8);background:rgba(248,249,251,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:4rem}
+.logo{font-family:var(--font-display);font-size:1.1rem;font-weight:600;letter-spacing:.12em;text-decoration:none;color:var(--ink)}
+.nav-links{display:none;align-items:center;gap:.25rem}
+.nav-links a{position:relative;padding:.5rem .875rem;border-radius:999px;font-size:.95rem;font-weight:500;color:var(--ink-soft);text-decoration:none;transition:color .2s}
+.nav-links a::after{content:"";position:absolute;left:.875rem;right:.875rem;bottom:.15rem;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--ink)}
+.nav-links a:hover::after,.nav-links a[aria-current]::after{transform:scaleX(1)}
+.nav-cta{display:none}
+.menu-btn{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border-radius:999px;border:1px solid rgba(11,27,43,.2);background:transparent;color:var(--ink);cursor:pointer}
+.menu-btn .i-close{display:none}
+.menu-btn[aria-expanded="true"] .i-close{display:block}
+.menu-btn[aria-expanded="true"] .i-open{display:none}
+.mobile-menu{border-top:1px solid var(--mist);background:var(--paper);max-height:calc(100dvh - 4rem);overflow-y:auto}
+.mobile-menu[hidden]{display:none}
+.mobile-menu ul{padding:1rem 0}
+.mobile-menu li{border-bottom:1px solid rgba(213,220,229,.7)}
+.mobile-menu li:last-child{border:0;padding-top:1.25rem}
+.mobile-menu a.m-link{display:flex;align-items:center;min-height:3.5rem;font-family:var(--font-display);font-size:1.5rem;text-decoration:none}
+.mobile-menu a[aria-current]{color:var(--teal-deep)}
+.mobile-menu .btn{width:100%}
+@media (min-width:1024px){.nav-links{display:flex}.nav-cta{display:block}.menu-btn{display:none}.mobile-menu{display:none!important}}
+
+/* ---------- Hero ---------- */
+#home{position:relative;overflow:hidden;padding:7rem 0 5rem;background-image:radial-gradient(rgba(213,220,229,.75) 1.2px,transparent 1.2px);background-size:22px 22px}
+@media (min-width:768px){#home{padding:9rem 0 7rem}}
+#home::before{content:"";position:absolute;top:-12rem;right:-12rem;width:34rem;height:34rem;border-radius:50%;background:rgba(143,184,222,.2);pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:3.5rem;align-items:center}
+@media (min-width:1024px){.hero-grid{grid-template-columns:7fr 5fr}}
+.pill{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1.75rem;padding:.5rem 1rem;border:1px solid var(--mist);border-radius:999px;background:var(--paper);font-size:.875rem;font-weight:500;color:var(--ink-soft)}
+.pill::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--teal)}
+h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1;letter-spacing:-.015em}
+h1 .line{display:block;overflow:hidden;padding-bottom:.18em}
+h1 .line>span{display:block;animation:rise .9s cubic-bezier(.22,1,.36,1) both;animation-delay:var(--d,0s)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.flourish-wrap{position:relative;display:inline-block}
+.flourish{position:absolute;left:0;bottom:-.25rem;width:100%;height:.75rem}
+.flourish path{stroke-dasharray:220;animation:draw 1.4s .6s ease-out both}
+@keyframes draw{from{stroke-dashoffset:220}to{stroke-dashoffset:0}}
+.hero-intro{max-width:36rem;margin-top:2rem;font-size:clamp(1.05rem,2vw,1.25rem);color:var(--ink-soft)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.25rem}
+.hero-meta{display:flex;flex-direction:column;gap:1.25rem;margin-top:2.5rem}
+@media (min-width:640px){.hero-meta{flex-direction:row;align-items:center;gap:2rem}}
+.socials{display:flex;flex-wrap:wrap;gap:.5rem}
+.socials a{display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid rgba(11,27,43,.2);color:var(--ink);transition:all .2s}
+.socials a:hover{transform:translateY(-2px);background:var(--teal-deep);border-color:var(--teal-deep);color:var(--paper)}
+.dark .socials a{border-color:rgba(248,249,251,.25);color:var(--paper)}
+.dark .socials a:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.loc{display:flex;align-items:center;gap:.5rem;font-size:.875rem;font-weight:500;color:var(--ink-soft)}
+.loc .icon{color:var(--teal-deep)}
+
+/* Three-view photo stack */
+.stack{--p:0;position:relative;margin-inline:auto;width:100%;max-width:34rem;aspect-ratio:100/96}
+.stack .bg{position:absolute;top:8%;left:9%;width:80%;height:80%;border-radius:50%;background:rgba(143,184,222,.4)}
+.stack .ring{position:absolute;inset:3%;border-radius:50%;border:1px dashed rgba(31,111,139,.5);transform:rotate(calc(var(--p) * 90deg))}
+.shot{position:absolute;will-change:transform}
+.shot .float{animation:float 7s ease-in-out infinite}
+.shot.s-left{bottom:2%;left:-2%;width:40%;z-index:1;transform:translate3d(calc(var(--p) * -70px),calc(var(--p) * 40px),0) rotate(calc(var(--p) * -9deg))}
+.shot.s-right{top:10%;right:-2%;width:40%;z-index:1;transform:translate3d(calc(var(--p) * 70px),calc(var(--p) * 70px),0) rotate(calc(var(--p) * 9deg))}
+.shot.s-front{top:2%;left:24%;width:52%;z-index:2;transform:translate3d(0,calc(var(--p) * -36px),0) scale(calc(1 + var(--p) * .05))}
+.shot.s-left .float{animation-duration:9s;animation-delay:-3s}
+.shot.s-left .tilt{transform:rotate(-7deg)}.shot.s-right .tilt{transform:rotate(7deg)}
+@keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-10px,0)}}
+.frame{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:1.75rem;border:5px solid var(--paper);background:var(--mist);box-shadow:0 24px 50px -24px rgba(11,27,43,.55)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame .ph{display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:.75rem;text-align:center;background:linear-gradient(135deg,var(--mist),rgba(143,184,222,.6))}
+.frame.is-missing .ph{display:flex}
+.ph b{font:600 2.25rem var(--font-display);color:var(--teal-darker)}
+.ph span{font-size:.75rem;font-weight:500;color:var(--ink-soft)}
+@media (max-width:767px){.stack .ring,.shot{transform:none!important}.shot.s-left .tilt{transform:rotate(-5deg)}.shot.s-right .tilt{transform:rotate(5deg)}}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;gap:3.5rem}
+@media (min-width:1024px){.about-grid{grid-template-columns:5fr 7fr;gap:4rem}}
+.quote{position:relative;margin-top:2.5rem;padding:2rem;border-radius:var(--radius);background:rgba(213,220,229,.4)}
+@media (min-width:768px){.quote{padding:2.5rem}}
+.quote::before{content:"\201C";position:absolute;top:-.6rem;left:1.25rem;font:500 6rem/1 var(--font-accent);color:var(--sky)}
+.quote blockquote{font:italic 500 clamp(1.5rem,3vw,1.9rem)/1.3 var(--font-accent);color:var(--ink)}
+.prose{display:grid;gap:1.25rem;font-size:1.125rem;color:var(--ink-soft)}
+.trio{display:grid;gap:1rem;margin-top:2.5rem}
+@media (min-width:768px){.trio{grid-template-columns:repeat(3,1fr)}}
+.trio li{padding:1.5rem;border-radius:1.5rem;border:1px solid var(--mist)}
+.trio li:nth-child(1){background:rgba(213,220,229,.4)}
+.trio li:nth-child(2){background:rgba(143,184,222,.25);border-color:rgba(143,184,222,.4)}
+.trio li:nth-child(3){background:var(--paper)}
+.trio h3{font-size:1.25rem}
+.trio p{margin-top:.75rem;font-size:.95rem;color:var(--ink-soft)}
+.goals{margin-top:1rem;padding:2rem;border-radius:1.5rem;background:var(--teal-darker);color:var(--paper)}
+@media (min-width:768px){.goals{padding:2.5rem}}
+.goals h3{font-size:1.5rem}
+.goals ul{display:grid;gap:.75rem;margin-top:1.25rem}
+.goals li{display:flex;gap:.75rem;align-items:flex-start}
+.goals .icon{color:var(--sky);margin-top:.3rem}
+
+/* ---------- Skills ---------- */
+.skills-grid{display:grid;gap:1.25rem;margin-top:3.5rem}
+@media (min-width:768px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.skills-grid{grid-template-columns:repeat(6,1fr)}
+  .skills-grid>:nth-child(1){grid-column:span 4}.skills-grid>:nth-child(2){grid-column:span 2}
+  .skills-grid>:nth-child(3),.skills-grid>:nth-child(4){grid-column:span 3}}
+.card{border:1px solid var(--mist);border-radius:var(--radius);background:var(--paper);padding:1.75rem}
+@media (min-width:768px){.card{padding:2rem}}
+.card-head{display:flex;gap:1rem;align-items:flex-start}
+.badge-icon{display:flex;flex:none;align-items:center;justify-content:center;width:3rem;height:3rem;border-radius:1rem;background:rgba(143,184,222,.4);color:var(--teal-darker)}
+.card-head h3{font-size:1.4rem}
+.card-head p{margin-top:.25rem;font-size:.95rem;color:var(--ink-soft)}
+.skill-list{display:grid;gap:.75rem;margin-top:1.75rem}
+@media (min-width:640px){.skill-list{grid-template-columns:repeat(2,1fr)}}
+.skill-list li{padding:1rem;border:1px solid var(--mist);border-radius:1rem;background:rgba(213,220,229,.25);transition:transform .2s,border-color .2s}
+.skill-list li:hover{transform:translateY(-2px);border-color:var(--teal)}
+.skill-list b{display:block;font-weight:600}
+.skill-list span{display:block;margin-top:.25rem;font-size:.875rem;color:var(--ink-soft)}
+.note{margin-top:2rem;font-size:.9rem;color:var(--ink-soft)}
+
+/* ---------- Projects ---------- */
+.proj-grid{display:grid;gap:1.5rem;margin-top:3.5rem}
+@media (min-width:768px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.proj-grid{grid-template-columns:repeat(3,1fr)}}
+.proj{display:flex;flex-direction:column;height:100%;overflow:hidden;border:1px solid var(--mist);border-radius:var(--radius);background:var(--paper);transition:transform .3s,border-color .3s,box-shadow .3s}
+.proj:hover{transform:translateY(-4px);border-color:var(--teal);box-shadow:0 28px 50px -34px var(--teal-darker)}
+.thumb{position:relative;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.25rem;background:linear-gradient(135deg,rgba(213,220,229,.6),rgba(143,184,222,.3));overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb .big{font:600 3.75rem var(--font-display);color:rgba(15,66,89,.8)}
+.thumb small{font-size:.75rem;font-weight:500;color:var(--ink-soft)}
+.status{position:absolute;top:1rem;left:1rem;display:inline-flex;align-items:center;gap:.375rem;padding:.25rem .75rem;border-radius:999px;font-size:.75rem;font-weight:600}
+.status.completed{background:var(--teal-darker);color:var(--paper)}
+.status.progress{background:var(--sky);color:var(--ink)}
+.status.planned{border:1px dashed var(--ink-soft);background:var(--paper);color:var(--ink-soft)}
+.proj-body{display:flex;flex:1;flex-direction:column;padding:1.5rem}
+@media (min-width:768px){.proj-body{padding:1.75rem}}
+.proj h3{font-size:1.4rem}
+.proj .sum{margin-top:.75rem;font-size:.95rem;color:var(--ink-soft)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.tags li{padding:.25rem .75rem;border:1px solid var(--mist);border-radius:999px;background:rgba(213,220,229,.3);font-size:.75rem;font-weight:500}
+.ph-note{margin-top:1rem;font-size:.75rem;font-style:italic;font-weight:500;color:var(--ink-soft)}
+.proj-foot{margin-top:auto;padding-top:1.5rem}
+.proj-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1rem}
+.proj-links .btn{font-size:.875rem;padding:.5rem 1.25rem}
+.soon{margin-bottom:1rem;font-size:.875rem;color:var(--ink-soft)}
+details{border-top:1px solid var(--mist);padding-top:.5rem}
+summary{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:2.75rem;cursor:pointer;list-style:none;font-size:.875rem;font-weight:600;color:var(--teal-deep)}
+summary::-webkit-details-marker{display:none}
+summary .icon{transition:transform .2s}
+details[open] summary .icon{transform:rotate(180deg)}
+details p{padding-bottom:.25rem;font-size:.95rem;color:var(--ink-soft)}
+
+/* ---------- Education ---------- */
+.timeline{position:relative;margin:3.5rem 0 0 .25rem;padding-left:2rem;border-left:2px solid var(--mist);display:grid;gap:2rem}
+@media (min-width:768px){.timeline{margin-left:1rem;padding-left:3.5rem}}
+.timeline>li{position:relative}
+.timeline>li::before{content:"";position:absolute;top:2rem;left:-2.65rem;width:1.25rem;height:1.25rem;border-radius:50%;border:4px solid var(--paper);background:var(--teal);box-shadow:0 0 0 2px rgba(31,111,139,.3)}
+@media (min-width:768px){.timeline>li::before{left:-4.15rem}}
+.edu{display:grid;gap:1.5rem;padding:1.75rem;border:1px solid var(--mist);border-radius:var(--radius);background:var(--paper)}
+@media (min-width:768px){.edu{grid-template-columns:11rem 1fr;padding:2.25rem}}
+.edu .yr{font:600 clamp(3rem,5vw,3.75rem)/1 var(--font-display);color:var(--teal)}
+.edu .lvl{display:inline-flex;margin-top:.5rem;padding:.25rem .75rem;border-radius:999px;background:rgba(143,184,222,.4);font-size:.75rem;font-weight:600}
+.edu h3{font-size:1.4rem}
+.edu .inst{margin-top:.25rem;color:var(--ink-soft)}
+.edu dl{display:grid;gap:.5rem;margin-top:1rem;font-size:.875rem;color:var(--ink-soft)}
+.edu dt{display:inline;font-weight:600;color:var(--ink)}
+.edu dd{display:inline}
+.edu .where{display:flex;align-items:flex-start;gap:.5rem}
+.edu .where .icon{color:var(--teal-deep);margin-top:.15rem}
+.link{display:inline-flex;align-items:center;gap:.375rem;min-height:2.75rem;font-size:.875rem;font-weight:600;color:var(--teal-deep);text-decoration:underline;text-decoration-color:rgba(31,111,139,.4);text-underline-offset:4px}
+.link:hover{text-decoration-color:var(--teal-deep)}
+.learning{margin-top:4rem;padding:2rem;border:1px solid var(--mist);border-radius:var(--radius);background:var(--paper)}
+@media (min-width:768px){.learning{padding:2.5rem}}
+.learning h3{font-size:1.5rem}
+.learning .sub{margin-top:.5rem;font-size:.875rem;color:var(--ink-soft)}
+.learn-grid{display:grid;gap:1rem;margin-top:2rem}
+@media (min-width:640px){.learn-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.learn-grid{grid-template-columns:repeat(4,1fr)}}
+.learn-grid li{padding:1.25rem;border-radius:1rem;background:rgba(213,220,229,.3)}
+.learn-grid .badge-icon{width:2.5rem;height:2.5rem;border-radius:.75rem}
+.learn-grid b{display:block;margin-top:1rem;font-weight:600}
+.learn-grid span{display:block;margin-top:.25rem;font-size:.875rem;color:var(--ink-soft)}
+
+/* ---------- Services ---------- */
+.svc-grid{display:grid;gap:1.25rem;margin-top:3.5rem}
+@media (min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}.svc-grid>:first-child{grid-column:span 2}}
+.svc{display:flex;flex-direction:column;height:100%;padding:1.75rem;border:1px solid var(--mist);border-radius:var(--radius);background:var(--paper);transition:transform .3s}
+@media (min-width:768px){.svc{padding:2rem}}
+.svc:hover{transform:translateY(-4px)}
+.svc.feature{background:var(--teal-darker);border-color:var(--teal-darker);color:var(--paper)}
+.svc.feature p{color:var(--mist)}
+.svc.feature .badge-icon{background:rgba(248,249,251,.15);color:var(--sky)}
+.svc.feature .num{color:var(--sky)}
+.svc.tint{background:rgba(143,184,222,.25);border-color:rgba(143,184,222,.4)}
+.svc.tint .badge-icon{background:var(--paper)}
+.svc-top{display:flex;align-items:flex-start;justify-content:space-between}
+.num{font:italic 500 1.9rem var(--font-accent);color:var(--teal-deep)}
+.svc h3{margin-top:2rem;font-size:1.4rem}
+.svc p{margin-top:.75rem;font-size:.95rem;color:var(--ink-soft)}
+
+/* ---------- Process ---------- */
+.steps{display:grid;gap:3rem 2rem;margin-top:4rem}
+@media (min-width:768px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps li{position:relative;padding-top:2rem;border-top:1px solid rgba(248,249,251,.25)}
+.steps li::before{content:"";position:absolute;top:-5px;left:0;width:10px;height:10px;border-radius:50%;background:var(--sky)}
+.steps .row{display:flex;align-items:center;justify-content:space-between}
+.steps .n{font:italic 500 3rem/1 var(--font-accent);color:var(--sky)}
+.steps .row .icon{color:var(--mist)}
+.steps h3{margin-top:1.5rem;font-size:1.25rem}
+.steps p{margin-top:.75rem;font-size:.95rem;color:var(--mist)}
+
+/* ---------- Profiles ---------- */
+.prof-grid{display:grid;gap:1rem;margin-top:3.5rem}
+@media (min-width:640px){.prof-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.prof-grid{grid-template-columns:repeat(4,1fr)}}
+.prof{display:flex;flex-direction:column;justify-content:space-between;min-height:12rem;height:100%;padding:1.5rem;border:1px solid var(--mist);border-radius:1.5rem;background:var(--paper);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.prof:hover{transform:translateY(-4px);border-color:var(--teal);box-shadow:0 24px 44px -30px var(--teal-darker)}
+.prof .top{display:flex;align-items:flex-start;justify-content:space-between}
+.prof .badge-icon{transition:background .2s,color .2s}
+.prof:hover .badge-icon{background:var(--teal-darker);color:var(--paper)}
+.prof .arrow{color:var(--ink-soft);transition:transform .2s,color .2s}
+.prof:hover .arrow{transform:translate(2px,-2px);color:var(--teal-deep)}
+.prof b{display:block;margin-top:2rem;font:600 1.25rem var(--font-display)}
+.prof .h{display:block;margin-top:.25rem;font-size:.875rem;font-weight:500;color:var(--teal-deep);word-break:break-all}
+.prof .p{display:block;margin-top:.5rem;font-size:.875rem;color:var(--ink-soft)}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;gap:2rem;margin-top:3.5rem}
+@media (min-width:1024px){.contact-grid{grid-template-columns:5fr 7fr}}
+.info{padding:2rem;border-radius:var(--radius);background:var(--teal-darker);color:var(--paper)}
+@media (min-width:768px){.info{padding:2.5rem}}
+.info h3{font-size:1.9rem}
+.info .tag{margin-top:.5rem;color:var(--mist)}
+.info dl{display:grid;gap:1.75rem;margin-top:2.5rem}
+.info .it{display:flex;gap:1rem}
+.info .it .icon{color:var(--sky);margin-top:.25rem}
+.info dt{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mist)}
+.info dd{margin-top:.25rem;font-size:1.1rem;font-weight:500}
+.info dd a{word-break:break-all;text-decoration:underline;text-decoration-color:rgba(143,184,222,.6);text-underline-offset:4px}
+.info dd a:hover{text-decoration-color:var(--paper)}
+.formcard{padding:1.5rem;border:1px solid var(--mist);border-radius:var(--radius);background:var(--paper);box-shadow:0 30px 60px -44px var(--teal-darker)}
+@media (min-width:768px){.formcard{padding:2.5rem}}
+.formcard h3{font-size:1.5rem}
+.formcard .sub{margin-top:.5rem;font-size:.875rem;color:var(--ink-soft)}
+form{display:grid;gap:1.5rem;margin-top:2rem}
+.two{display:grid;gap:1.5rem}
+@media (min-width:640px){.two{grid-template-columns:repeat(2,1fr)}}
+label{display:block;margin-bottom:.5rem;font-size:.875rem;font-weight:600}
+input,textarea{width:100%;padding:.75rem 1rem;border:1px solid rgba(11,27,43,.3);border-radius:1rem;background:var(--paper);color:var(--ink);font:inherit;font-size:1rem}
+textarea{resize:vertical;min-height:9rem}
+input::placeholder,textarea::placeholder{color:var(--ink-soft);opacity:.8}
+input:focus-visible,textarea:focus-visible{border-color:var(--teal-deep)}
+[aria-invalid="true"]{border-color:var(--ink);background:rgba(213,220,229,.3)}
+.err{margin-top:.5rem;font-size:.875rem;font-weight:500}
+.count{margin-top:.5rem;font-size:.75rem;text-align:right;color:var(--ink-soft)}
+.hp{position:absolute;left:-9999px;width:0;height:0;overflow:hidden}
+.form-row{display:flex;flex-direction:column;gap:1rem}
+@media (min-width:640px){.form-row{flex-direction:row;align-items:center}}
+.msg{padding:.75rem 1rem;border-radius:1rem;font-size:.9rem;font-weight:500}
+.msg.ok{background:rgba(143,184,222,.3)}
+.msg.bad{border:1px solid rgba(11,27,43,.4);background:rgba(213,220,229,.4)}
+.msg[hidden]{display:none}
+
+/* ---------- Footer ---------- */
+footer{padding:4rem 0}
+@media (min-width:768px){footer{padding:5rem 0}}
+.foot-grid{display:grid;gap:3rem}
+@media (min-width:1024px){.foot-grid{grid-template-columns:6fr 3fr 3fr}}
+.foot-name{font:600 clamp(2.5rem,6vw,4.5rem)/1 var(--font-display);letter-spacing:-.01em}
+.foot-grid p.intro{max-width:28rem;margin-top:1.5rem;color:var(--mist)}
+.foot-loc{display:flex;align-items:center;gap:.5rem;margin-top:1.5rem;font-size:.875rem;color:var(--mist)}
+.foot-loc .icon{color:var(--sky)}
+.foot-h{font-size:.85rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+.foot-links{display:grid;gap:.25rem;margin-top:1.25rem}
+.foot-links a{display:inline-flex;align-items:center;min-height:2rem;color:var(--mist);text-decoration:none}
+.foot-links a:hover{color:var(--paper)}
+.foot-mail{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.25rem;min-height:2rem;color:var(--mist);text-decoration:none;word-break:break-all}
+.foot-mail:hover{color:var(--paper)}
+.foot-mail .icon{color:var(--sky)}
+.foot-grid .socials{margin-top:1.25rem}
+.foot-bottom{display:flex;flex-direction:column;gap:1.25rem;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(248,249,251,.2);font-size:.875rem;color:var(--mist)}
+@media (min-width:640px){.foot-bottom{flex-direction:row;align-items:center;justify-content:space-between}}
+.to-top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 1.25rem;border:1px solid rgba(248,249,251,.25);border-radius:999px;color:var(--paper);font-weight:500;text-decoration:none;transition:all .2s;align-self:flex-start}
+.to-top:hover{background:var(--paper);color:var(--ink)}
+</style>
+</head>
+
+<body>
+<script>document.documentElement.classList.add("js")</script>
+
+<!-- Icon sprite (inline so there are no extra files or requests) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-leetcode" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/><path d="m13.5 4.5-3 15"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l16 16"/><path d="M20 4 4 20"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-dashed" viewBox="0 0 24 24"><path d="M10.1 2.18a10 10 0 0 1 3.8 0M17.6 3.71a10 10 0 0 1 2.69 2.7M21.82 10.1a10 10 0 0 1 0 3.8M20.29 17.6a10 10 0 0 1-2.7 2.69M13.9 21.82a10 10 0 0 1-3.8 0M6.4 20.29a10 10 0 0 1-2.69-2.7M2.18 13.9a10 10 0 0 1 0-3.8M3.71 6.4a10 10 0 0 1 2.7-2.69"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2-10 5 10 5 10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10v6"/><path d="m2 10 10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ============================ NAVIGATION ============================ -->
+<header class="site">
+  <nav class="container nav" aria-label="Primary">
+    <a class="logo" href="#home">ATUL SHARMA</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary nav-cta resume-btn" data-resume href="#" download hidden><svg class="icon sm" aria-hidden="true"><use href="#i-download"/></svg>Download Resume</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="container">
+      <li><a class="m-link" href="#home">Home</a></li>
+      <li><a class="m-link" href="#about">About</a></li>
+      <li><a class="m-link" href="#skills">Skills</a></li>
+      <li><a class="m-link" href="#projects">Projects</a></li>
+      <li><a class="m-link" href="#education">Education</a></li>
+      <li><a class="m-link" href="#services">Services</a></li>
+      <li><a class="m-link" href="#contact">Contact</a></li>
+      <li><a class="btn btn-primary resume-btn" data-resume href="#" download hidden><svg class="icon sm" aria-hidden="true"><use href="#i-download"/></svg>Download Resume</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section id="home" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div>
+      <p class="pill reveal">Web Developer · WordPress · SEO</p>
+      <h1 id="hero-title">
+        <span class="line"><span style="--d:.05s">Designing <span class="flourish-wrap"><em class="accent">Ideas.</em>
+          <svg class="flourish" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 9 C 28 1, 52 15, 80 7 S 140 2, 198 8" fill="none" stroke="#8FB8DE" stroke-width="3.5" stroke-linecap="round"/></svg></span></span></span>
+        <span class="line"><span style="--d:.2s">Building <em class="accent">Digital</em> Experiences.</span></span>
+        <span class="sr-only"> — Atul Sharma, Web Developer</span>
+      </h1>
+      <p class="hero-intro reveal" style="--d:.35s">Hello, I'm Atul Sharma — a developer passionate about creating meaningful digital experiences through technology, creativity and continuous learning.</p>
+      <div class="cta-row reveal" style="--d:.45s">
+        <a class="btn btn-primary" href="#projects">Explore My Work <svg class="icon sm" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+        <a class="btn btn-secondary" href="#contact"><svg class="icon sm" aria-hidden="true"><use href="#i-mail"/></svg>Contact Me</a>
+        <a class="btn btn-ghost resume-btn" data-resume href="#" download hidden><svg class="icon sm" aria-hidden="true"><use href="#i-download"/></svg>Download Resume</a>
+      </div>
+      <div class="hero-meta reveal" style="--d:.55s">
+        <ul class="socials" aria-label="Social profiles">
+          <li><a href="https://github.com/atulvishwakrma" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" title="GitHub @atulvishwakrma"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/atul-sharma-34b4432b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+          <li><a href="https://leetcode.com/asatulsharma" target="_blank" rel="noopener noreferrer" aria-label="LeetCode (opens in a new tab)" title="LeetCode asatulsharma"><svg class="icon" aria-hidden="true"><use href="#i-leetcode"/></svg></a></li>
+          <li><a href="https://x.com/atulsharma" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter (opens in a new tab)" title="X @atulsharma"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></a></li>
+          <li><a href="https://www.instagram.com/atulsharma" target="_blank" rel="noopener noreferrer" aria-label="Personal Instagram (opens in a new tab)" title="Instagram @atulsharma"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://www.instagram.com/lazycrazy.tech" target="_blank" rel="noopener noreferrer" aria-label="Tech Instagram (opens in a new tab)" title="Instagram @lazycrazy.tech"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://www.youtube.com/lazycrazytech" target="_blank" rel="noopener noreferrer" aria-label="YouTube (opens in a new tab)" title="YouTube lazycrazytech"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+        </ul>
+        <p class="loc"><svg class="icon sm" aria-hidden="true"><use href="#i-pin"/></svg>Ghazipur, Uttar Pradesh, India</p>
+      </div>
+    </div>
+
+    <!-- Three-view photo composition: put front/left/right images in the images/ folder -->
+    <div class="stack" id="stack" role="group" aria-label="Photos of Atul Sharma from the front, left and right">
+      <div class="bg" aria-hidden="true"></div>
+      <div class="ring" aria-hidden="true"></div>
+      <div class="shot s-left"><div class="float"><div class="tilt">
+        <div class="frame"><img data-photo="left" src="images/left.webp" alt="Atul Sharma, left side view" width="800" height="1000" loading="lazy" decoding="async"><div class="ph" role="img" aria-label="Placeholder: left side photo will appear here"><b>AS</b><span>Left side photo<br>placeholder</span></div></div>
+      </div></div></div>
+      <div class="shot s-right"><div class="float"><div class="tilt">
+        <div class="frame"><img data-photo="right" src="images/right.webp" alt="Atul Sharma, right side view" width="800" height="1000" loading="lazy" decoding="async"><div class="ph" role="img" aria-label="Placeholder: right side photo will appear here"><b>AS</b><span>Right side photo<br>placeholder</span></div></div>
+      </div></div></div>
+      <div class="shot s-front"><div class="float">
+        <div class="frame"><img data-photo="front" src="images/front.webp" alt="Atul Sharma, front view" width="800" height="1000" fetchpriority="high" decoding="async"><div class="ph" role="img" aria-label="Placeholder: front photo will appear here"><b>AS</b><span>Front photo<br>placeholder</span></div></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div>
+      <div class="sec-head reveal">
+        <p class="eyebrow">About me</p>
+        <h2 class="h2" id="about-title">Learning by <em class="accent">building</em> real things</h2>
+      </div>
+      <figure class="quote reveal" style="--d:.1s">
+        <blockquote>I like the moment when an idea becomes something a real person can open, click and use.</blockquote>
+      </figure>
+    </div>
+    <div>
+      <div class="prose">
+        <p class="reveal">I'm Atul, from Ghazipur in Uttar Pradesh. My work sits where web development, WordPress and search come together: building pages, keeping websites healthy, and making sure the people they are meant for can actually find them.</p>
+        <p class="reveal" style="--d:.08s">My formal grounding comes from the BCA programme at Veer Bahadur Singh Purvanchal University, Jaunpur. Around it I have been adding practical skills through ADCA Pro, SEO and WordPress training, and by building things. I mix hands-on coding with AI-assisted coding to prototype quickly while I keep learning the fundamentals underneath.</p>
+        <p class="reveal" style="--d:.16s">I also write SEO-optimised news articles in English and Hindi, so I think about websites from the reader's side of the screen as much as the developer's.</p>
+      </div>
+      <ul class="trio">
+        <li class="reveal"><h3>Web development</h3><p>Responsive, fast, readable websites. Starting with the fundamentals and growing from there.</p></li>
+        <li class="reveal" style="--d:.08s"><h3>WordPress &amp; SEO</h3><p>Managing sites, researching keywords and writing content that is useful to read and easy to find.</p></li>
+        <li class="reveal" style="--d:.16s"><h3>English + Hindi writing</h3><p>News-style articles written for readers first and search engines second.</p></li>
+      </ul>
+      <div class="goals dark reveal">
+        <h3>Where I'm heading</h3>
+        <ul>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Ship more real projects I can show and explain</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Add app development to my toolkit</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Work with teams that care about quality and keep learning</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS ============================ -->
+<!-- HOW TO EDIT: add a new <li><b>Name</b><span>short honest line</span></li> only for tools you really know. -->
+<section id="skills" class="alt" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Skills &amp; stack</p>
+      <h2 class="h2" id="skills-title">The tools I <em class="accent">work</em> with</h2>
+      <p class="lead">Grouped by what they are used for. This list shows what I use today, and it grows as I learn.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="card reveal">
+        <div class="card-head"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-monitor"/></svg></span><div><h3>Frontend development</h3><p>The part of a website people see and touch.</p></div></div>
+        <ul class="skill-list">
+          <li><b>HTML5</b><span>Semantic page structure.</span></li>
+          <li><b>CSS3</b><span>Responsive layouts and styling.</span></li>
+          <li><b>JavaScript</b><span>Page behaviour and interactivity.</span></li>
+        </ul>
+      </article>
+      <article class="card reveal" style="--d:.08s">
+        <div class="card-head"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-terminal"/></svg></span><div><h3>Tools</h3><p>How I work day to day.</p></div></div>
+        <ul class="skill-list" style="grid-template-columns:1fr">
+          <li><b>Linux</b><span>Comfortable using it for daily work.</span></li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="card-head"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-search"/></svg></span><div><h3>SEO &amp; WordPress</h3><p>Getting websites found and keeping them in shape.</p></div></div>
+        <ul class="skill-list">
+          <li><b>Search Engine Optimization</b><span>On-page SEO fundamentals.</span></li>
+          <li><b>Keyword research</b><span>Finding what people actually search for.</span></li>
+          <li><b>WordPress</b><span>Setting up and managing WordPress sites.</span></li>
+          <li><b>Website management</b><span>Updates, content and day-to-day upkeep.</span></li>
+        </ul>
+      </article>
+      <article class="card reveal" style="--d:.08s">
+        <div class="card-head"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-pen"/></svg></span><div><h3>Content writing</h3><p>Words that readers and search engines both understand.</p></div></div>
+        <ul class="skill-list">
+          <li><b>SEO news writing</b><span>News-style articles optimised for search.</span></li>
+          <li><b>English + Hindi</b><span>Writing for readers in both languages.</span></li>
+        </ul>
+      </article>
+    </div>
+    <p class="note reveal">Currently learning and building towards: TypeScript, React, Next.js, Node.js, Git &amp; GitHub and app development. They will appear here once I'm confident using them in real projects.</p>
+  </div>
+</section>
+
+<!-- ============================ PROJECTS ============================ -->
+<!-- HOW TO EDIT: change the status class (completed / progress / planned), add Live demo / GitHub buttons when real links exist,
+     and replace the thumbnail <div> with <img src="images/project-name.webp" alt="..."> -->
+<section id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Featured projects</p>
+      <h2 class="h2" id="projects-title">Work in <em class="accent">progress</em>, shown honestly</h2>
+      <p class="lead">Each project is labelled Completed, In progress or Planned. Finished work and live links will appear here as it ships.</p>
+    </div>
+    <ul class="proj-grid">
+      <li class="reveal">
+        <article class="proj">
+          <div class="thumb"><span class="big" aria-hidden="true">P</span><small>Thumbnail placeholder</small><span class="status progress"><svg class="icon sm" aria-hidden="true"><use href="#i-hammer"/></svg>In progress</span></div>
+          <div class="proj-body">
+            <h3>Personal Portfolio Website</h3>
+            <p class="sum">The site you are looking at: a single-page portfolio focused on responsive design, accessibility, SEO basics and fast loading.</p>
+            <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="proj-foot">
+              <p class="soon">Links will be added when this is ready to share.</p>
+              <details><summary>View project details<svg class="icon sm" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Built as one fast, accessible page with a three-view photo hero, a project showcase, a learning timeline and a contact form. Source code and the live link will be added here once deployed.</p></details>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="reveal" style="--d:.08s">
+        <article class="proj">
+          <div class="thumb"><span class="big" aria-hidden="true">C</span><small>Thumbnail placeholder</small><span class="status planned"><svg class="icon sm" aria-hidden="true"><use href="#i-dashed"/></svg>Planned</span></div>
+          <div class="proj-body">
+            <h3>Cloth Center E-commerce Website</h3>
+            <p class="sum">A planned online storefront for a clothing business.</p>
+            <ul class="tags" aria-label="Technologies"><li>To be decided</li></ul>
+            <p class="ph-note">Placeholder content. A real write-up will replace this.</p>
+            <div class="proj-foot">
+              <p class="soon">Links will be added when this is ready to share.</p>
+              <details><summary>View project details<svg class="icon sm" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Placeholder. Scope, features and stack will be filled in when the project starts.</p></details>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="reveal" style="--d:.16s">
+        <article class="proj">
+          <div class="thumb"><span class="big" aria-hidden="true">B</span><small>Thumbnail placeholder</small><span class="status planned"><svg class="icon sm" aria-hidden="true"><use href="#i-dashed"/></svg>Planned</span></div>
+          <div class="proj-body">
+            <h3>Business Website</h3>
+            <p class="sum">A planned responsive website for a small business.</p>
+            <ul class="tags" aria-label="Technologies"><li>To be decided</li></ul>
+            <p class="ph-note">Placeholder content. A real write-up will replace this.</p>
+            <div class="proj-foot">
+              <p class="soon">Links will be added when this is ready to share.</p>
+              <details><summary>View project details<svg class="icon sm" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Placeholder. Details will be added when the project starts.</p></details>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="reveal">
+        <article class="proj">
+          <div class="thumb"><span class="big" aria-hidden="true">A</span><small>Thumbnail placeholder</small><span class="status planned"><svg class="icon sm" aria-hidden="true"><use href="#i-dashed"/></svg>Planned</span></div>
+          <div class="proj-body">
+            <h3>Admin Dashboard</h3>
+            <p class="sum">A planned dashboard for managing content and data.</p>
+            <ul class="tags" aria-label="Technologies"><li>To be decided</li></ul>
+            <p class="ph-note">Placeholder content. A real write-up will replace this.</p>
+            <div class="proj-foot">
+              <p class="soon">Links will be added when this is ready to share.</p>
+              <details><summary>View project details<svg class="icon sm" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Placeholder. Details will be added when the project starts.</p></details>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="reveal" style="--d:.08s">
+        <article class="proj">
+          <div class="thumb"><span class="big" aria-hidden="true">M</span><small>Thumbnail placeholder</small><span class="status planned"><svg class="icon sm" aria-hidden="true"><use href="#i-dashed"/></svg>Planned</span></div>
+          <div class="proj-body">
+            <h3>More web development projects</h3>
+            <p class="sum">Space reserved for upcoming practice and client projects.</p>
+            <ul class="tags" aria-label="Technologies"><li>To be decided</li></ul>
+            <p class="ph-note">Placeholder content. A real write-up will replace this.</p>
+            <div class="proj-foot">
+              <p class="soon">Links will be added when this is ready to share.</p>
+              <details><summary>View project details<svg class="icon sm" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Placeholder. Replace this card with a real project as soon as you have one to show.</p></details>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ EDUCATION ============================ -->
+<!-- HOW TO EDIT: when you are ready, add a line like  <div><dt>Status:</dt> <dd>Pursuing</dd></div>  inside the BCA <dl>. -->
+<section id="education" class="alt" aria-labelledby="education-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Education &amp; learning</p>
+      <h2 class="h2" id="education-title">My learning <em class="accent">journey</em></h2>
+      <p class="lead">Formal education first, then the extra training and practice that fills in the practical side.</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><div class="edu">
+        <div><p class="yr">2021</p><p class="lvl">10th</p></div>
+        <div><h3>High School</h3><p class="inst">UP Board</p><dl><div><dt>Year:</dt> <dd>2021</dd></div></dl></div>
+      </div></li>
+      <li class="reveal"><div class="edu">
+        <div><p class="yr">2023</p><p class="lvl">12th</p></div>
+        <div><h3>Intermediate</h3><p class="inst">UP Board</p><dl><div><dt>Year:</dt> <dd>2023</dd></div></dl></div>
+      </div></li>
+      <li class="reveal"><div class="edu">
+        <div><p class="yr">2026</p><p class="lvl">Bachelor's</p></div>
+        <div>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p class="inst">Veer Bahadur Singh Purvanchal University</p>
+          <dl>
+            <div><dt>Year:</dt> <dd>2026</dd></div>
+            <div class="where"><dt class="sr-only">Location</dt><svg class="icon sm" aria-hidden="true"><use href="#i-pin"/></svg><dd>Jaunpur, Uttar Pradesh – 222003, India</dd></div>
+          </dl>
+          <a class="link" href="https://www.vbspu.ac.in/" target="_blank" rel="noopener noreferrer">Official university website<svg class="icon sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+        </div>
+      </div></li>
+    </ol>
+
+    <div class="learning reveal">
+      <h3>Also <em class="accent">learning</em></h3>
+      <p class="sub">Additional training and self-study. These are learning areas, not formal certifications.</p>
+      <ul class="learn-grid">
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-grad"/></svg></span><b>ADCA Pro</b><span>Computer applications training</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span><b>Search Engine Optimization</b><span>On-page SEO and content</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg></span><b>WordPress website management</b><span>Setup, content and upkeep</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-compass"/></svg></span><b>Keyword research</b><span>Finding search demand</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></span><b>SEO news writing</b><span>English and Hindi articles</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><b>Web development</b><span>HTML, CSS, JavaScript and beyond</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span><b>Hands-on + vibe coding</b><span>Learning by building, with AI help</span></li>
+        <li><span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span><b>Linux</b><span>Daily use and command line</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<!-- HOW TO EDIT: delete any <li> for a service you cannot deliver yet. -->
+<section id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">What I can build</p>
+      <h2 class="h2" id="services-title">Websites and <em class="accent">support</em> I can help with</h2>
+      <p class="lead">Practical help for small businesses, creators and individuals, focused on clear, fast, easy-to-use websites.</p>
+    </div>
+    <ul class="svc-grid">
+      <li class="reveal"><article class="svc feature dark"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-globe"/></svg></span><span class="num" aria-hidden="true">01</span></div><h3>Responsive business websites</h3><p>Clean, mobile-friendly websites that explain what a business does and make it easy to get in touch.</p></article></li>
+      <li class="reveal" style="--d:.08s"><article class="svc"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-layout"/></svg></span><span class="num" aria-hidden="true">02</span></div><h3>Portfolio websites</h3><p>Personal sites that present your work, skills and story clearly.</p></article></li>
+      <li class="reveal"><article class="svc"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-rocket"/></svg></span><span class="num" aria-hidden="true">03</span></div><h3>Landing pages</h3><p>Focused single pages for a product, event or campaign, built to load fast.</p></article></li>
+      <li class="reveal" style="--d:.08s"><article class="svc tint"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-sliders"/></svg></span><span class="num" aria-hidden="true">04</span></div><h3>WordPress website management</h3><p>Updates, content changes and routine upkeep for WordPress sites.</p></article></li>
+      <li class="reveal" style="--d:.16s"><article class="svc"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-search"/></svg></span><span class="num" aria-hidden="true">05</span></div><h3>SEO fundamentals</h3><p>Keyword research, titles, descriptions and on-page basics that help a site get found.</p></article></li>
+      <li class="reveal"><article class="svc"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-pen"/></svg></span><span class="num" aria-hidden="true">06</span></div><h3>SEO content writing (English + Hindi)</h3><p>News-style and informational articles written for readers and structured for search.</p></article></li>
+      <li class="reveal" style="--d:.08s"><article class="svc tint"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-layers"/></svg></span><span class="num" aria-hidden="true">07</span></div><h3>Website UI improvements</h3><p>Tidying layout, spacing, typography and mobile behaviour on an existing site.</p></article></li>
+      <li class="reveal" style="--d:.16s"><article class="svc"><div class="svc-top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-wrench"/></svg></span><span class="num" aria-hidden="true">08</span></div><h3>Website maintenance</h3><p>Keeping a site up to date, working and tidy after it launches.</p></article></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section id="approach" class="dark" aria-labelledby="approach-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">How I work</p>
+      <h2 class="h2" id="approach-title">From first question to <em class="accent">launch</em> and beyond</h2>
+      <p class="lead">The seven steps I follow on a project, so nothing important gets skipped.</p>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><div class="row"><span class="n" aria-hidden="true">01</span><svg class="icon lg" aria-hidden="true"><use href="#i-compass"/></svg></div><h3><span class="sr-only">Step 1: </span>Understand the problem</h3><p>Who is this for and what should it help them do?</p></li>
+      <li class="reveal" style="--d:.08s"><div class="row"><span class="n" aria-hidden="true">02</span><svg class="icon lg" aria-hidden="true"><use href="#i-clipboard"/></svg></div><h3><span class="sr-only">Step 2: </span>Research and planning</h3><p>Look at similar sites, list the pages and content, pick the tools.</p></li>
+      <li class="reveal" style="--d:.16s"><div class="row"><span class="n" aria-hidden="true">03</span><svg class="icon lg" aria-hidden="true"><use href="#i-layers"/></svg></div><h3><span class="sr-only">Step 3: </span>UI/UX design</h3><p>Sketch the layout, choose type and colour, think about small screens first.</p></li>
+      <li class="reveal" style="--d:.24s"><div class="row"><span class="n" aria-hidden="true">04</span><svg class="icon lg" aria-hidden="true"><use href="#i-code"/></svg></div><h3><span class="sr-only">Step 4: </span>Development</h3><p>Build in small, reusable pieces and keep the code readable.</p></li>
+      <li class="reveal"><div class="row"><span class="n" aria-hidden="true">05</span><svg class="icon lg" aria-hidden="true"><use href="#i-shield"/></svg></div><h3><span class="sr-only">Step 5: </span>Testing and security</h3><p>Check every device size, every link and every form, and review the basics of security.</p></li>
+      <li class="reveal" style="--d:.08s"><div class="row"><span class="n" aria-hidden="true">06</span><svg class="icon lg" aria-hidden="true"><use href="#i-rocket"/></svg></div><h3><span class="sr-only">Step 6: </span>Deployment</h3><p>Publish with HTTPS, set up the domain and submit the sitemap.</p></li>
+      <li class="reveal" style="--d:.16s"><div class="row"><span class="n" aria-hidden="true">07</span><svg class="icon lg" aria-hidden="true"><use href="#i-wrench"/></svg></div><h3><span class="sr-only">Step 7: </span>Maintenance and improvement</h3><p>Fix, update and improve based on what real visitors do.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================ PROFILES ============================ -->
+<section id="profiles" aria-labelledby="profiles-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Coding &amp; social profiles</p>
+      <h2 class="h2" id="profiles-title">Find me <em class="accent">elsewhere</em> online</h2>
+      <p class="lead">Code, practice, content and conversations. Every card opens the real profile in a new tab.</p>
+    </div>
+    <ul class="prof-grid">
+      <li class="reveal"><a class="prof" href="https://github.com/atulvishwakrma" target="_blank" rel="noopener noreferrer" aria-label="GitHub, @atulvishwakrma (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-github"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>GitHub</b><span class="h">@atulvishwakrma</span><span class="p">Code and repositories</span></span></a></li>
+      <li class="reveal" style="--d:.06s"><a class="prof" href="https://www.linkedin.com/in/atul-sharma-34b4432b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn, Atul Sharma (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-linkedin"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>LinkedIn</b><span class="h">Atul Sharma</span><span class="p">Professional profile</span></span></a></li>
+      <li class="reveal" style="--d:.12s"><a class="prof" href="https://leetcode.com/asatulsharma" target="_blank" rel="noopener noreferrer" aria-label="LeetCode, asatulsharma (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-leetcode"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>LeetCode</b><span class="h">asatulsharma</span><span class="p">Coding practice</span></span></a></li>
+      <li class="reveal" style="--d:.18s"><a class="prof" href="https://x.com/atulsharma" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter, @atulsharma (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-x"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>X / Twitter</b><span class="h">@atulsharma</span><span class="p">Updates and thoughts</span></span></a></li>
+      <li class="reveal"><a class="prof" href="https://www.instagram.com/atulsharma" target="_blank" rel="noopener noreferrer" aria-label="Instagram personal, @atulsharma (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-instagram"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>Instagram (personal)</b><span class="h">@atulsharma</span><span class="p">Personal moments</span></span></a></li>
+      <li class="reveal" style="--d:.06s"><a class="prof" href="https://www.instagram.com/lazycrazy.tech" target="_blank" rel="noopener noreferrer" aria-label="Instagram tech, @lazycrazy.tech (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-instagram"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>Instagram (tech)</b><span class="h">@lazycrazy.tech</span><span class="p">Tech content</span></span></a></li>
+      <li class="reveal" style="--d:.12s"><a class="prof" href="https://www.youtube.com/lazycrazytech" target="_blank" rel="noopener noreferrer" aria-label="YouTube, lazycrazytech (opens in a new tab)"><span class="top"><span class="badge-icon"><svg class="icon lg" aria-hidden="true"><use href="#i-youtube"/></svg></span><svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span><span><b>YouTube</b><span class="h">lazycrazytech</span><span class="p">Videos and tutorials</span></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section id="contact" class="alt" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="h2" id="contact-title">Let's <em class="accent">talk</em> about your idea</h2>
+      <p class="lead">Have a website to build, a page to improve or a question about my work? Send a message and I will reply by email.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info dark" style="height:100%">
+          <h3>Atul Sharma</h3>
+          <p class="tag">Web development, WordPress, SEO and bilingual content</p>
+          <dl>
+            <div class="it"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><div><dt>Email</dt><dd><a href="mailto:asatulvishwakarma@gmail.com">asatulvishwakarma@gmail.com</a></dd></div></div>
+            <div class="it"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><dt>Location</dt><dd>Ghazipur, Uttar Pradesh, India – 233303</dd></div></div>
+          </dl>
+        </div>
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <div class="formcard">
+          <h3>Send a message</h3>
+          <p class="sub">All fields are required.</p>
+          <form id="contact-form" novalidate>
+            <div class="two">
+              <div><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" maxlength="80"><p class="err" id="f-name-err" hidden></p></div>
+              <div><label for="f-email">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120"><p class="err" id="f-email-err" hidden></p></div>
+            </div>
+            <div><label for="f-subject">Subject</label><input id="f-subject" name="subject" type="text" maxlength="120"><p class="err" id="f-subject-err" hidden></p></div>
+            <div><label for="f-message">Message</label><textarea id="f-message" name="message" rows="6" maxlength="2000" aria-describedby="f-count"></textarea><p class="err" id="f-message-err" hidden></p><p class="count" id="f-count">0 / 2000</p></div>
+            <div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <div class="form-row">
+              <button class="btn btn-primary" type="submit" id="f-submit"><svg class="icon sm" aria-hidden="true"><use href="#i-send"/></svg><span>Send message</span></button>
+              <p class="msg ok" id="f-ok" role="status" hidden></p>
+            </div>
+            <p class="msg bad" id="f-bad" role="alert" hidden></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="dark" data-surface="dark">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-name">Atul <em class="accent">Sharma</em></p>
+        <p class="intro">Web developer and SEO content writer from Ghazipur, India. Building useful websites and learning something new with every project.</p>
+        <p class="foot-loc"><svg class="icon sm" aria-hidden="true"><use href="#i-pin"/></svg>Ghazipur, Uttar Pradesh, India – 233303</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="foot-h">Navigate</p>
+        <ul class="foot-links">
+          <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="foot-h">Connect</p>
+        <a class="foot-mail" href="mailto:asatulvishwakarma@gmail.com"><svg class="icon sm" aria-hidden="true"><use href="#i-mail"/></svg>asatulvishwakarma@gmail.com</a>
+        <ul class="socials" aria-label="Social profiles">
+          <li><a href="https://github.com/atulvishwakrma" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/atul-sharma-34b4432b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+          <li><a href="https://leetcode.com/asatulsharma" target="_blank" rel="noopener noreferrer" aria-label="LeetCode (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-leetcode"/></svg></a></li>
+          <li><a href="https://x.com/atulsharma" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></a></li>
+          <li><a href="https://www.instagram.com/atulsharma" target="_blank" rel="noopener noreferrer" aria-label="Personal Instagram (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://www.instagram.com/lazycrazy.tech" target="_blank" rel="noopener noreferrer" aria-label="Tech Instagram (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://www.youtube.com/lazycrazytech" target="_blank" rel="noopener noreferrer" aria-label="YouTube (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year">2026</span> Atul Sharma. All rights reserved.</p>
+      <a class="to-top" href="#home">Back to top<svg class="icon sm" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* =====================================================================
+     SETTINGS: the only part you may need to edit.
+     ===================================================================== */
+  var CONFIG = {
+    // Put your resume PDF in the images folder's parent (next to index.html) and write its name here.
+    // Leave "" to hide all Download Resume buttons (nobody gets a broken link).
+    resumeFile: "Atul-Sharma-Resume.pdf",
+    // Contact form. Leave "" to use the visitor's own email app (mailto), which is honest and needs no server.
+    // For a real "send" button, create a free form at https://formspree.io and paste its URL here,
+    // e.g. "https://formspree.io/f/abcdwxyz". Success is only shown if that service accepts the message.
+    formEndpoint: "",
+    toEmail: "asatulvishwakarma@gmail.com"
+  };
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  /* ---------- Year ---------- */
+  $("#year").textContent = new Date().getFullYear();
+
+  /* ---------- Resume buttons: only shown if the PDF really exists ---------- */
+  (function resume() {
+    var buttons = $$("[data-resume]");
+    if (!CONFIG.resumeFile || !buttons.length) return;
+    function show() {
+      buttons.forEach(function (b) { b.href = CONFIG.resumeFile; b.setAttribute("download", "Atul-Sharma-Resume.pdf"); b.hidden = false; });
+    }
+    // Opened by double-click (file://) the browser cannot check whether the PDF exists, so the buttons stay
+    // hidden there. On the live website (https://) the file is checked and the buttons appear only if it exists.
+    if (location.protocol === "file:") return;
+    fetch(CONFIG.resumeFile, { method: "HEAD" }).then(function (r) { if (r.ok) show(); }).catch(function () {});
+  })();
+
+  /* ---------- Photos: swap in placeholders for any missing file ---------- */
+  $$("img[data-photo]").forEach(function (img) {
+    var frame = img.parentNode;
+    function missing() { frame.classList.add("is-missing"); img.style.display = "none"; }
+    img.addEventListener("error", missing);
+    if (img.complete && img.naturalWidth === 0) missing();
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  var revealEls = $$(".reveal");
+  if ("IntersectionObserver" in window && !reduceMotion) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    revealEls.forEach(function (el) { ro.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---------- Hero parallax (one passive listener, rAF-throttled, transform-only) ---------- */
+  (function parallax() {
+    var stack = $("#stack");
+    if (!stack || reduceMotion) return;
+    var wide = window.matchMedia("(min-width: 768px)");
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var p = wide.matches ? Math.min(Math.max(window.scrollY / 700, 0), 1) : 0;
+      stack.style.setProperty("--p", p.toFixed(3));
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    wide.addEventListener("change", update);
+    update();
+  })();
+
+  /* ---------- Active section in the menu ---------- */
+  (function activeNav() {
+    var parent = { approach: "services", profiles: "contact" };
+    var links = $$('.nav-links a, .mobile-menu a.m-link');
+    var ids = ["home", "about", "skills", "projects", "education", "services", "approach", "profiles", "contact"];
+    var els = ids.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    if (!("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      var vis = entries.filter(function (e) { return e.isIntersecting; })
+        .sort(function (a, b) { return a.boundingClientRect.top - b.boundingClientRect.top; });
+      if (!vis.length) return;
+      var id = parent[vis[0].target.id] || vis[0].target.id;
+      links.forEach(function (a) {
+        if (a.getAttribute("href") === "#" + id) a.setAttribute("aria-current", "location");
+        else a.removeAttribute("aria-current");
+      });
+    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+
+  /* ---------- Mobile menu ---------- */
+  (function menu() {
+    var btn = $("#menu-btn"), panel = $("#mobile-menu");
+    function set(open) {
+      btn.setAttribute("aria-expanded", String(open));
+      btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      panel.hidden = !open;
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+    btn.addEventListener("click", function () { set(btn.getAttribute("aria-expanded") !== "true"); });
+    $$("a", panel).forEach(function (a) { a.addEventListener("click", function () { set(false); }); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && btn.getAttribute("aria-expanded") === "true") { set(false); btn.focus(); }
+    });
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", function (m) { if (m.matches) set(false); });
+  })();
+
+  /* ---------- Contact form ---------- */
+  (function form() {
+    var f = $("#contact-form");
+    var fields = ["name", "email", "subject", "message"];
+    var ok = $("#f-ok"), bad = $("#f-bad"), submit = $("#f-submit");
+    var count = $("#f-count"), msgBox = $("#f-message");
+
+    msgBox.addEventListener("input", function () { count.textContent = msgBox.value.length + " / 2000"; });
+
+    function rules(v) {
+      var e = {};
+      var name = v.name.trim(), email = v.email.trim(), subject = v.subject.trim(), message = v.message.trim();
+      if (name.length < 2) e.name = "Please enter your full name.";
+      else if (name.length > 80) e.name = "Name is too long (maximum 80 characters).";
+      else if (/[\r\n]/.test(name)) e.name = "Name cannot contain line breaks.";
+      if (!email) e.email = "Please enter your email address.";
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 120) e.email = "Please enter a valid email address.";
+      if (subject.length < 3) e.subject = "Please add a short subject.";
+      else if (subject.length > 120) e.subject = "Subject is too long (maximum 120 characters).";
+      else if (/[\r\n]/.test(subject)) e.subject = "Subject cannot contain line breaks.";
+      if (message.length < 10) e.message = "Please write at least 10 characters.";
+      else if (message.length > 2000) e.message = "Message is too long (maximum 2000 characters).";
+      return e;
+    }
+    function showErrors(errs) {
+      var first = null;
+      fields.forEach(function (n) {
+        var input = $("#f-" + n), p = $("#f-" + n + "-err");
+        if (errs[n]) {
+          p.textContent = "⚠ " + errs[n]; p.hidden = false;
+          input.setAttribute("aria-invalid", "true");
+          input.setAttribute("aria-describedby", p.id + (n === "message" ? " f-count" : ""));
+          if (!first) first = input;
+        } else {
+          p.hidden = true; p.textContent = "";
+          input.removeAttribute("aria-invalid");
+          input.removeAttribute("aria-describedby");
+          if (n === "message") input.setAttribute("aria-describedby", "f-count");
+        }
+      });
+      if (first) first.focus();
+    }
+    function say(el, text) { ok.hidden = true; bad.hidden = true; el.textContent = text; el.hidden = false; }
+
+    f.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      ok.hidden = true; bad.hidden = true;
+      var v = { name: f.name.value, email: f.email.value, subject: f.subject.value, message: f.message.value };
+      var errs = rules(v);
+      showErrors(errs);
+      if (Object.keys(errs).length) return;
+      if (f.website.value.trim() !== "") { say(bad, "Your message could not be sent."); return; } // honeypot
+
+      if (CONFIG.formEndpoint) {
+        submit.disabled = true; submit.querySelector("span").textContent = "Sending…";
+        fetch(CONFIG.formEndpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ name: v.name.trim(), email: v.email.trim(), subject: v.subject.trim(), message: v.message.trim() })
+        }).then(function (r) {
+          if (r.ok) { f.reset(); count.textContent = "0 / 2000"; say(ok, "✓ Thank you! Your message has been sent."); }
+          else say(bad, "⚠ Your message could not be sent. Please try again, or email " + CONFIG.toEmail + " directly.");
+        }).catch(function () {
+          say(bad, "⚠ Could not reach the server. Please check your connection, or email " + CONFIG.toEmail + " directly.");
+        }).then(function () { submit.disabled = false; submit.querySelector("span").textContent = "Send message"; });
+        return;
+      }
+
+      // No server configured: open the visitor's email app with the message ready. We do NOT claim it was sent.
+      var body = "Name: " + v.name.trim() + "\nEmail: " + v.email.trim() + "\n\n" + v.message.trim();
+      var href = "mailto:" + CONFIG.toEmail + "?subject=" + encodeURIComponent("Portfolio contact: " + v.subject.trim()) + "&body=" + encodeURIComponent(body);
+      say(ok, "Your email app should open with the message ready. Press Send there to deliver it. If nothing opens, please email " + CONFIG.toEmail + " directly.");
+      window.location.href = href;
+    });
+  })();
+})();
+</script>
+</body>
+</html>
